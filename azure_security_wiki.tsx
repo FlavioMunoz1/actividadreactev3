@@ -238,7 +238,7 @@ export default function AzureSecurityWiki() {
 
   const ActiveComponent = tabs.find(tab => tab.id === activeTab)?.component || IntroContent;
 
-  const handleTabChange = (tabId) => {
+  const handleTabChange = (tabId: string) => {
     setActiveTab(tabId);
     setIsMobileMenuOpen(false); // Cerrar menú en móviles al seleccionar
   };
